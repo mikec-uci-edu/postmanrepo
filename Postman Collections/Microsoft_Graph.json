@@ -47,7 +47,7 @@
 									}
 								}
 							],
-							"_postman_id": "56eb6478-9731-429d-b759-04785ced34d8",
+							"id": "56eb6478-9731-429d-b759-04785ced34d8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -93,7 +93,7 @@
 									}
 								}
 							],
-							"_postman_id": "ef1ec46a-3a17-4350-8288-3b5944f12f68",
+							"id": "ef1ec46a-3a17-4350-8288-3b5944f12f68",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -109,10 +109,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"displayName\": \"My App\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"displayName\": \"My App\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/applications"
 							},
@@ -148,7 +145,7 @@
 									}
 								}
 							],
-							"_postman_id": "41e3c638-4caf-4652-9548-743f8fa9909f",
+							"id": "41e3c638-4caf-4652-9548-743f8fa9909f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -196,7 +193,7 @@
 									}
 								}
 							],
-							"_postman_id": "2f37bc6e-545c-4aac-81a5-eecfabbec47d",
+							"id": "2f37bc6e-545c-4aac-81a5-eecfabbec47d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -244,7 +241,7 @@
 									}
 								}
 							],
-							"_postman_id": "3a139336-589c-4fb3-bb71-5af54a5bbd66",
+							"id": "3a139336-589c-4fb3-bb71-5af54a5bbd66",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -260,10 +257,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"signInAudience\": \"AzureADMyOrg\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"signInAudience\": \"AzureADMyOrg\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/applications/{{ApplicationId}}"
 							},
@@ -304,7 +298,7 @@
 									}
 								}
 							],
-							"_postman_id": "d9cd5bdf-0eec-4eeb-b55d-abeb25f96147",
+							"id": "d9cd5bdf-0eec-4eeb-b55d-abeb25f96147",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -320,18 +314,14 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {}
-									}
+									"raw": ""
 								},
 								"url": "https://graph.microsoft.com/beta/applications/{{ApplicationId}}"
 							},
 							"response": []
 						}
 					],
-					"_postman_id": "185ad624-4d5e-4210-abc2-73e7cedefa34",
-					"_postman_isSubFolder": true
+					"id": "185ad624-4d5e-4210-abc2-73e7cedefa34"
 				},
 				{
 					"name": "Batch",
@@ -366,7 +356,7 @@
 									}
 								}
 							],
-							"_postman_id": "7d9b18c9-ec07-4de1-9ceb-6a73742e0087",
+							"id": "7d9b18c9-ec07-4de1-9ceb-6a73742e0087",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -382,10 +372,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"url\": \"/me?$select=displayName,jobTitle,userPrincipalName\",\n      \"method\": \"GET\",\n      \"id\": \"1\"\n    },\n    {\n      \"url\": \"/me/messages?$filter=importance eq 'high'&$select=from,subject,receivedDateTime,bodyPreview\",\n      \"method\": \"GET\",\n      \"id\": \"2\"\n    },\n    {\n      \"url\": \"/me/events\",\n      \"method\": \"GET\",\n      \"id\": \"3\"\n    }\n  ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"requests\": [\n    {\n      \"url\": \"/me?$select=displayName,jobTitle,userPrincipalName\",\n      \"method\": \"GET\",\n      \"id\": \"1\"\n    },\n    {\n      \"url\": \"/me/messages?$filter=importance eq 'high'&$select=from,subject,receivedDateTime,bodyPreview\",\n      \"method\": \"GET\",\n      \"id\": \"2\"\n    },\n    {\n      \"url\": \"/me/events\",\n      \"method\": \"GET\",\n      \"id\": \"3\"\n    }\n  ]\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/$batch"
 							},
@@ -421,7 +408,7 @@
 									}
 								}
 							],
-							"_postman_id": "c792a608-e56a-4be9-91d1-e8dc3dfa1fe9",
+							"id": "c792a608-e56a-4be9-91d1-e8dc3dfa1fe9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -437,18 +424,14 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"url\": \"/me/drive/root/children\",\n      \"method\": \"POST\",\n      \"id\": \"1\",\n      \"body\": {\n        \"name\": \"TestBatchingFolder\",\n        \"folder\": {}\n      },\n      \"headers\": {\n        \"Content-Type\": \"application/json\"\n      }\n    },\n    {\n      \"url\": \"/me/drive/root/children/TestBatchingFolder \",\n      \"method\": \"GET\",\n      \"id\": \"2\",\n      \"DependsOn\": [\n        \"1\"\n      ]\n    }\n  ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"requests\": [\n    {\n      \"url\": \"/me/drive/root/children\",\n      \"method\": \"POST\",\n      \"id\": \"1\",\n      \"body\": {\n        \"name\": \"TestBatchingFolder\",\n        \"folder\": {}\n      },\n      \"headers\": {\n        \"Content-Type\": \"application/json\"\n      }\n    },\n    {\n      \"url\": \"/me/drive/root/children/TestBatchingFolder \",\n      \"method\": \"GET\",\n      \"id\": \"2\",\n      \"DependsOn\": [\n        \"1\"\n      ]\n    }\n  ]\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/$batch"
 							},
 							"response": []
 						}
 					],
-					"_postman_id": "1cd43e6d-8da5-4073-b149-72014a8f4362",
-					"_postman_isSubFolder": true
+					"id": "1cd43e6d-8da5-4073-b149-72014a8f4362"
 				},
 				{
 					"name": "Events",
@@ -483,7 +466,7 @@
 									}
 								}
 							],
-							"_postman_id": "5618c592-fd87-4e5f-b56c-6040328f9147",
+							"id": "5618c592-fd87-4e5f-b56c-6040328f9147",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -546,7 +529,7 @@
 									}
 								}
 							],
-							"_postman_id": "45306ce5-b99d-422e-8557-8adf5eb4898c",
+							"id": "45306ce5-b99d-422e-8557-8adf5eb4898c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -621,7 +604,7 @@
 									}
 								}
 							],
-							"_postman_id": "35982ee0-41a6-445f-8b46-dc920ecfefec",
+							"id": "35982ee0-41a6-445f-8b46-dc920ecfefec",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -673,7 +656,7 @@
 									}
 								}
 							],
-							"_postman_id": "255a29f5-9ae1-4241-a342-0bcf261ac7aa",
+							"id": "255a29f5-9ae1-4241-a342-0bcf261ac7aa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -688,10 +671,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"subject\": \"Microsoft Graph community call\",\n  \"body\": {\n    \"contentType\": \"HTML\",\n    \"content\": \"Call link: https://aka.ms/mmkv1b Submit a question: https://aka.ms/ybuw2i\"\n  },\n  \"start\": {\n    \"dateTime\": \"2018-09-04T08:00:00\",\n    \"timeZone\": \"Pacific Standard Time\"\n  },\n  \"end\": {\n    \"dateTime\": \"2018-09-04T09:00:00\",\n    \"timeZone\": \"Pacific Standard Time\"\n  },\n  \"location\": {\n    \"displayName\": \"Skype for Business\"\n  },\n  \"recurrence\": {\n    \"pattern\": {\n      \"type\": \"relativeMonthly\",\n      \"interval\": 1,\n      \"daysOfWeek\": [\n        \"Tuesday\"\n      ],\n      \"index\": \"first\"\n    },\n    \"range\": {\n      \"type\": \"noEnd\",\n      \"startDate\": \"2017-08-29\"\n    }\n  }\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"subject\": \"Microsoft Graph community call\",\n  \"body\": {\n    \"contentType\": \"HTML\",\n    \"content\": \"Call link: https://aka.ms/mmkv1b Submit a question: https://aka.ms/ybuw2i\"\n  },\n  \"start\": {\n    \"dateTime\": \"2018-09-04T08:00:00\",\n    \"timeZone\": \"Pacific Standard Time\"\n  },\n  \"end\": {\n    \"dateTime\": \"2018-09-04T09:00:00\",\n    \"timeZone\": \"Pacific Standard Time\"\n  },\n  \"location\": {\n    \"displayName\": \"Skype for Business\"\n  },\n  \"recurrence\": {\n    \"pattern\": {\n      \"type\": \"relativeMonthly\",\n      \"interval\": 1,\n      \"daysOfWeek\": [\n        \"Tuesday\"\n      ],\n      \"index\": \"first\"\n    },\n    \"range\": {\n      \"type\": \"noEnd\",\n      \"startDate\": \"2017-08-29\"\n    }\n  }\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/events"
 							},
@@ -743,7 +723,7 @@
 									}
 								}
 							],
-							"_postman_id": "3441abd4-8d40-40d9-9e01-155e668fde57",
+							"id": "3441abd4-8d40-40d9-9e01-155e668fde57",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -780,8 +760,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "3737d14e-49ff-4554-90c3-0a64d4959b88",
-					"_postman_isSubFolder": true
+					"id": "3737d14e-49ff-4554-90c3-0a64d4959b88"
 				},
 				{
 					"name": "Files",
@@ -816,7 +795,7 @@
 									}
 								}
 							],
-							"_postman_id": "eb355d79-3175-4cdf-ad2d-da0d4ff4bad9",
+							"id": "eb355d79-3175-4cdf-ad2d-da0d4ff4bad9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -863,7 +842,7 @@
 									}
 								}
 							],
-							"_postman_id": "99663edf-de8d-4d23-be99-058d386a2b70",
+							"id": "99663edf-de8d-4d23-be99-058d386a2b70",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -910,7 +889,7 @@
 									}
 								}
 							],
-							"_postman_id": "fdb90be3-5ce1-4f15-b9bb-95aa6ce33bfb",
+							"id": "fdb90be3-5ce1-4f15-b9bb-95aa6ce33bfb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -957,7 +936,7 @@
 									}
 								}
 							],
-							"_postman_id": "6dce975d-d9f2-4b83-b955-842112200a36",
+							"id": "6dce975d-d9f2-4b83-b955-842112200a36",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1025,7 +1004,7 @@
 									}
 								}
 							],
-							"_postman_id": "e16a0994-c695-43db-b219-8714277ed93a",
+							"id": "e16a0994-c695-43db-b219-8714277ed93a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1040,18 +1019,14 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"New Folder\",\n  \"folder\": {}\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"name\": \"New Folder\",\n  \"folder\": {}\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/drive/root/children"
 							},
 							"response": []
 						}
 					],
-					"_postman_id": "64c2bc2a-adbf-4bf9-9711-6fb5f496f3ca",
-					"_postman_isSubFolder": true
+					"id": "64c2bc2a-adbf-4bf9-9711-6fb5f496f3ca"
 				},
 				{
 					"name": "Groups",
@@ -1091,7 +1066,7 @@
 									}
 								}
 							],
-							"_postman_id": "5924b797-7746-4bfa-bc62-6b6641e07b84",
+							"id": "5924b797-7746-4bfa-bc62-6b6641e07b84",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1109,8 +1084,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "632d854e-5428-4c4a-bfbb-a81fdfacc4d7",
-					"_postman_isSubFolder": true
+					"id": "632d854e-5428-4c4a-bfbb-a81fdfacc4d7"
 				},
 				{
 					"name": "Insights",
@@ -1145,7 +1119,7 @@
 									}
 								}
 							],
-							"_postman_id": "5ca0cbc9-e835-4cc4-85a1-3d011b714bd8",
+							"id": "5ca0cbc9-e835-4cc4-85a1-3d011b714bd8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1192,7 +1166,7 @@
 									}
 								}
 							],
-							"_postman_id": "a4870bcb-958a-4e56-afa2-4e84ea8ce62c",
+							"id": "a4870bcb-958a-4e56-afa2-4e84ea8ce62c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1210,8 +1184,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "fb27486e-2bb8-457c-8038-c7f674f1f148",
-					"_postman_isSubFolder": true
+					"id": "fb27486e-2bb8-457c-8038-c7f674f1f148"
 				},
 				{
 					"name": "Mail",
@@ -1251,7 +1224,7 @@
 									}
 								}
 							],
-							"_postman_id": "7c461ae2-972e-4d75-8e37-5742ee9a6b2a",
+							"id": "7c461ae2-972e-4d75-8e37-5742ee9a6b2a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1298,7 +1271,7 @@
 									}
 								}
 							],
-							"_postman_id": "00099038-5963-4f1a-b833-7d7234a28b58",
+							"id": "00099038-5963-4f1a-b833-7d7234a28b58",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1364,7 +1337,7 @@
 									}
 								}
 							],
-							"_postman_id": "e08f697d-8a91-418c-860b-7b4811e858c4",
+							"id": "e08f697d-8a91-418c-860b-7b4811e858c4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1430,7 +1403,7 @@
 									}
 								}
 							],
-							"_postman_id": "ab7a8473-879b-4766-b66d-b58e5452d2cb",
+							"id": "ab7a8473-879b-4766-b66d-b58e5452d2cb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1496,7 +1469,7 @@
 									}
 								}
 							],
-							"_postman_id": "a0f3aa94-2eea-43ba-aaae-7c62715e3319",
+							"id": "a0f3aa94-2eea-43ba-aaae-7c62715e3319",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1573,7 +1546,7 @@
 									}
 								}
 							],
-							"_postman_id": "6ed42bd1-21d2-47ae-9188-0e270cebd0c0",
+							"id": "6ed42bd1-21d2-47ae-9188-0e270cebd0c0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1620,7 +1593,7 @@
 									}
 								}
 							],
-							"_postman_id": "5a86113e-a373-4696-a82e-6c0c0a708cbc",
+							"id": "5a86113e-a373-4696-a82e-6c0c0a708cbc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1667,7 +1640,7 @@
 									}
 								}
 							],
-							"_postman_id": "13816e86-a1af-4b89-935e-a4e933059fb4",
+							"id": "13816e86-a1af-4b89-935e-a4e933059fb4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1714,7 +1687,7 @@
 									}
 								}
 							],
-							"_postman_id": "d064f4e2-424b-4a73-bf6b-f3b4cc074c7a",
+							"id": "d064f4e2-424b-4a73-bf6b-f3b4cc074c7a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1791,7 +1764,7 @@
 									}
 								}
 							],
-							"_postman_id": "88c77075-54a0-46c5-af5b-1654b3e5f778",
+							"id": "88c77075-54a0-46c5-af5b-1654b3e5f778",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1806,10 +1779,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"false\"\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"false\"\r\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/sendMail"
 							},
@@ -1845,7 +1815,7 @@
 									}
 								}
 							],
-							"_postman_id": "60f711f4-42c7-4563-8dfe-46d0e619716f",
+							"id": "60f711f4-42c7-4563-8dfe-46d0e619716f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1892,7 +1862,7 @@
 									}
 								}
 							],
-							"_postman_id": "ea39a83e-b612-4810-9ce5-f2fbc542eaef",
+							"id": "ea39a83e-b612-4810-9ce5-f2fbc542eaef",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1908,18 +1878,14 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"@odata.context\": \"https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings\",\r\n\"automaticRepliesSetting\": {\r\n        \"status\": \"scheduled\",\r\n        \"externalAudience\": \"contactsOnly\",\r\n        \"internalReplyMessage\": \"<html>\\n<body>\\n<div>I'm on vacation!</div>\\n<div><br>\\n</div>\\n<div>Kindly regards</div>\\n<div></div>\\n</body>\\n</html>\\n\",\r\n        \"externalReplyMessage\": \"<html>\\n<body>\\n<div></div>\\n<div>I'm on vacation.</div>\\n<div><br>\\n</div>\\n<div>Kindly regards</div>\\n</body>\\n</html>\\n\",\r\n        \"scheduledStartDateTime\": {\r\n            \"dateTime\": \"2019-07-15T08:00:00.0000000\",\r\n            \"timeZone\": \"Europe/Berlin\"\r\n        },\r\n        \"scheduledEndDateTime\": {\r\n            \"dateTime\": \"2019-08-09T16:00:00.0000000\",\r\n            \"timeZone\": \"Europe/Berlin\"\r\n        }\r\n    }\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n    \"@odata.context\": \"https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings\",\r\n\"automaticRepliesSetting\": {\r\n        \"status\": \"scheduled\",\r\n        \"externalAudience\": \"contactsOnly\",\r\n        \"internalReplyMessage\": \"<html>\\n<body>\\n<div>I'm on vacation!</div>\\n<div><br>\\n</div>\\n<div>Kindly regards</div>\\n<div></div>\\n</body>\\n</html>\\n\",\r\n        \"externalReplyMessage\": \"<html>\\n<body>\\n<div></div>\\n<div>I'm on vacation.</div>\\n<div><br>\\n</div>\\n<div>Kindly regards</div>\\n</body>\\n</html>\\n\",\r\n        \"scheduledStartDateTime\": {\r\n            \"dateTime\": \"2019-07-15T08:00:00.0000000\",\r\n            \"timeZone\": \"Europe/Berlin\"\r\n        },\r\n        \"scheduledEndDateTime\": {\r\n            \"dateTime\": \"2019-08-09T16:00:00.0000000\",\r\n            \"timeZone\": \"Europe/Berlin\"\r\n        }\r\n    }\r\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/mailboxSettings"
 							},
 							"response": []
 						}
 					],
-					"_postman_id": "e89427fa-a7b2-4bc1-8001-b0d92d78a28c",
-					"_postman_isSubFolder": true
+					"id": "e89427fa-a7b2-4bc1-8001-b0d92d78a28c"
 				},
 				{
 					"name": "Notebooks",
@@ -1959,7 +1925,7 @@
 									}
 								}
 							],
-							"_postman_id": "cd5b4b48-e728-4286-963d-073a8a18a5f8",
+							"id": "cd5b4b48-e728-4286-963d-073a8a18a5f8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2011,7 +1977,7 @@
 									}
 								}
 							],
-							"_postman_id": "ecbe9c2e-0eb6-4f23-8c2c-28a0a0ea40b4",
+							"id": "ecbe9c2e-0eb6-4f23-8c2c-28a0a0ea40b4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2063,7 +2029,7 @@
 									}
 								}
 							],
-							"_postman_id": "60be61b5-3ae7-448b-9911-4fa874b6062a",
+							"id": "60be61b5-3ae7-448b-9911-4fa874b6062a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2115,7 +2081,7 @@
 									}
 								}
 							],
-							"_postman_id": "4b56a66d-4af7-4ac9-bb2f-f9e08b3d4fe0",
+							"id": "4b56a66d-4af7-4ac9-bb2f-f9e08b3d4fe0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2130,10 +2096,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"displayName\": \"Postman Notebook 1\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"displayName\": \"Postman Notebook 1\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/onenote/notebooks"
 							},
@@ -2174,7 +2137,7 @@
 									}
 								}
 							],
-							"_postman_id": "b69bf16a-8e31-4400-a6a3-438774996b51",
+							"id": "b69bf16a-8e31-4400-a6a3-438774996b51",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2189,18 +2152,14 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"displayName\": \"Section 1\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"displayName\": \"Section 1\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/onenote/notebooks/{{NotebookId}}/sections"
 							},
 							"response": []
 						}
 					],
-					"_postman_id": "33da64f4-c13d-499a-8715-69ca0c74a6c5",
-					"_postman_isSubFolder": true
+					"id": "33da64f4-c13d-499a-8715-69ca0c74a6c5"
 				},
 				{
 					"name": "Extensions",
@@ -2238,7 +2197,7 @@
 											}
 										}
 									],
-									"_postman_id": "59091815-4830-433d-b165-5ba95169363b",
+									"id": "59091815-4830-433d-b165-5ba95169363b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2307,7 +2266,7 @@
 											}
 										}
 									],
-									"_postman_id": "6cd372d4-f564-4ec9-9493-c4941affb075",
+									"id": "6cd372d4-f564-4ec9-9493-c4941affb075",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2329,10 +2288,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"@odata.type\": \"microsoft.graph.openTypeExtension\",\n  \"extensionName\": \"com.contoso.roamingSettings\",\n  \"theme\": \"dark\",\n  \"color\": \"purple\",\n  \"lang\": \"Japanese\"\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\n  \"@odata.type\": \"microsoft.graph.openTypeExtension\",\n  \"extensionName\": \"com.contoso.roamingSettings\",\n  \"theme\": \"dark\",\n  \"color\": \"purple\",\n  \"lang\": \"Japanese\"\n}"
 										},
 										"url": "https://graph.microsoft.com/v1.0/me/extensions"
 									},
@@ -2368,7 +2324,7 @@
 											}
 										}
 									],
-									"_postman_id": "bf03148e-aeb0-4f4d-836b-fe923af18f73",
+									"id": "bf03148e-aeb0-4f4d-836b-fe923af18f73",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2390,18 +2346,14 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"theme\": \"light\",\n  \"color\": \"red\",\n  \"lang\": \"Swahili\"\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\n  \"theme\": \"light\",\n  \"color\": \"red\",\n  \"lang\": \"Swahili\"\n}"
 										},
 										"url": "https://graph.microsoft.com/v1.0/me/extensions/{{ExtensionId}}"
 									},
 									"response": []
 								}
 							],
-							"_postman_id": "75d398f4-79f1-40e6-a0be-8ce12bbeed93",
-							"_postman_isSubFolder": true
+							"id": "75d398f4-79f1-40e6-a0be-8ce12bbeed93"
 						},
 						{
 							"name": "Schema extensions",
@@ -2436,7 +2388,7 @@
 											}
 										}
 									],
-									"_postman_id": "f667fd22-e5ac-4eaf-870f-741133656a38",
+									"id": "f667fd22-e5ac-4eaf-870f-741133656a38",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2483,7 +2435,7 @@
 											}
 										}
 									],
-									"_postman_id": "95cab721-f30e-4d8d-a8fd-4591ecec1108",
+									"id": "95cab721-f30e-4d8d-a8fd-4591ecec1108",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2505,10 +2457,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"displayName\": \"Extensions sample group\",\n  \"description\": \"Extensions sample group\",\n  \"groupTypes\": [\n    \"Unified\"\n  ],\n  \"mailEnabled\": true,\n  \"mailNickname\": \"extSample123\",\n  \"securityEnabled\": false,\n  \"adatumisv_courses\": {\n    \"id\": \"123\",\n    \"name\": \"New Managers\",\n    \"type\": \"Online\"\n  }\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\n  \"displayName\": \"Extensions sample group\",\n  \"description\": \"Extensions sample group\",\n  \"groupTypes\": [\n    \"Unified\"\n  ],\n  \"mailEnabled\": true,\n  \"mailNickname\": \"extSample123\",\n  \"securityEnabled\": false,\n  \"adatumisv_courses\": {\n    \"id\": \"123\",\n    \"name\": \"New Managers\",\n    \"type\": \"Online\"\n  }\n}"
 										},
 										"url": "https://graph.microsoft.com/v1.0/groups"
 									},
@@ -2544,7 +2493,7 @@
 											}
 										}
 									],
-									"_postman_id": "d8013911-89bb-489d-88ad-785c3661a30d",
+									"id": "d8013911-89bb-489d-88ad-785c3661a30d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2613,7 +2562,7 @@
 											}
 										}
 									],
-									"_postman_id": "2b7fa3e3-1f33-42bc-98aa-9df72033ebf2",
+									"id": "2b7fa3e3-1f33-42bc-98aa-9df72033ebf2",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2640,22 +2589,17 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"adatumisv_courses\": {\n    \"id\": \"123\",\n    \"name\": \"More Managers\",\n    \"type\": \"Online\"\n  }\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\n  \"adatumisv_courses\": {\n    \"id\": \"123\",\n    \"name\": \"More Managers\",\n    \"type\": \"Online\"\n  }\n}"
 										},
 										"url": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}"
 									},
 									"response": []
 								}
 							],
-							"_postman_id": "f401a1b4-89db-49ac-8f58-e7a864e8ee45",
-							"_postman_isSubFolder": true
+							"id": "f401a1b4-89db-49ac-8f58-e7a864e8ee45"
 						}
 					],
-					"_postman_id": "4c2b2acc-ed1b-42f9-8ca0-7a7195116222",
-					"_postman_isSubFolder": true
+					"id": "4c2b2acc-ed1b-42f9-8ca0-7a7195116222"
 				},
 				{
 					"name": "People",
@@ -2690,7 +2634,7 @@
 									}
 								}
 							],
-							"_postman_id": "671c090b-1853-451e-95fd-00c61313099f",
+							"id": "671c090b-1853-451e-95fd-00c61313099f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2737,7 +2681,7 @@
 									}
 								}
 							],
-							"_postman_id": "b5d77372-4a30-4a38-8acc-39c64df8b6ec",
+							"id": "b5d77372-4a30-4a38-8acc-39c64df8b6ec",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2807,7 +2751,7 @@
 									}
 								}
 							],
-							"_postman_id": "1965f6e3-262c-4aaf-aa20-b0e70cc89671",
+							"id": "1965f6e3-262c-4aaf-aa20-b0e70cc89671",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2874,7 +2818,7 @@
 									}
 								}
 							],
-							"_postman_id": "56e433f7-98c0-4a95-be4f-e522144ee330",
+							"id": "56e433f7-98c0-4a95-be4f-e522144ee330",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2945,7 +2889,7 @@
 									}
 								}
 							],
-							"_postman_id": "f39b2e7f-dcd6-426d-9ef1-f0d956d69014",
+							"id": "f39b2e7f-dcd6-426d-9ef1-f0d956d69014",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3012,7 +2956,7 @@
 									}
 								}
 							],
-							"_postman_id": "b34ab6e1-4724-4896-be6a-98a6ad174615",
+							"id": "b34ab6e1-4724-4896-be6a-98a6ad174615",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3079,7 +3023,7 @@
 									}
 								}
 							],
-							"_postman_id": "a716f1ee-3757-433f-994e-4777cfb32415",
+							"id": "a716f1ee-3757-433f-994e-4777cfb32415",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3146,7 +3090,7 @@
 									}
 								}
 							],
-							"_postman_id": "6cc7f914-494f-486c-9220-cd594d1ceb98",
+							"id": "6cc7f914-494f-486c-9220-cd594d1ceb98",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3164,15 +3108,14 @@
 							"response": []
 						}
 					],
-					"_postman_id": "0766b0d4-bfd7-4979-b4fb-5897bec64b55",
-					"_postman_isSubFolder": true
+					"id": "0766b0d4-bfd7-4979-b4fb-5897bec64b55"
 				},
 				{
 					"name": "Search",
 					"item": [
 						{
 							"name": "Search messages",
-							"_postman_id": "22f08e4f-a386-4f41-a77c-67c2911395e1",
+							"id": "22f08e4f-a386-4f41-a77c-67c2911395e1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3188,10 +3131,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"message\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"message\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3227,7 +3167,7 @@
 									}
 								}
 							],
-							"_postman_id": "f26396ee-3ab4-40ac-8c6c-7d7f97baec43",
+							"id": "f26396ee-3ab4-40ac-8c6c-7d7f97baec43",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3242,10 +3182,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"entityTypes\": [\r\n                \"message\"\r\n            ],\r\n            \"query\": {\r\n                \"queryString\": \"contoso\"\r\n            },\r\n            \"enableTopResults\": true\r\n        }\r\n    ]\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"entityTypes\": [\r\n                \"message\"\r\n            ],\r\n            \"query\": {\r\n                \"queryString\": \"contoso\"\r\n            },\r\n            \"enableTopResults\": true\r\n        }\r\n    ]\r\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3253,7 +3190,7 @@
 						},
 						{
 							"name": "Search events",
-							"_postman_id": "8a140853-ea91-4ddd-96d6-3431b4ff3fe7",
+							"id": "8a140853-ea91-4ddd-96d6-3431b4ff3fe7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3269,10 +3206,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"event\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"event\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3280,7 +3214,7 @@
 						},
 						{
 							"name": "Search files and folders",
-							"_postman_id": "9a35b57a-7a7f-4853-a2e9-fabc93d286cf",
+							"id": "9a35b57a-7a7f-4853-a2e9-fabc93d286cf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3296,10 +3230,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n                //\"queryString\": \"contoso filetype:pdf OR filetype:docx\"\n                //\"queryString\": \"contoso path:\\\"https://contoso.sharepoint.com/sites/Team Site/Documents/\\\\\"\"                              \n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n                //\"queryString\": \"contoso filetype:pdf OR filetype:docx\"\n                //\"queryString\": \"contoso path:\\\"https://contoso.sharepoint.com/sites/Team Site/Documents/\\\\\"\"                              \n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3307,7 +3238,7 @@
 						},
 						{
 							"name": "Search lists",
-							"_postman_id": "db483635-5431-45e9-94e3-c5547c50a309",
+							"id": "db483635-5431-45e9-94e3-c5547c50a309",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3323,10 +3254,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"list\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"list\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3334,7 +3262,7 @@
 						},
 						{
 							"name": "Search list items",
-							"_postman_id": "b0611ed6-8daa-46bc-a0ae-f7148b658858",
+							"id": "b0611ed6-8daa-46bc-a0ae-f7148b658858",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3350,10 +3278,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3361,7 +3286,7 @@
 						},
 						{
 							"name": "Search list items with property selection",
-							"_postman_id": "33d903a9-8cdf-43fb-b503-a6a0ccfb4de3",
+							"id": "33d903a9-8cdf-43fb-b503-a6a0ccfb4de3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3377,10 +3302,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"issue\"\n            },\n            \"fields\": [\n                \"id\",\n                \"name\",                \n                \"contentclass\",\n                \"title\",\n                \"fooCustomProperty\"\n            ]\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"issue\"\n            },\n            \"fields\": [\n                \"id\",\n                \"name\",                \n                \"contentclass\",\n                \"title\",\n                \"fooCustomProperty\"\n            ]\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3388,7 +3310,7 @@
 						},
 						{
 							"name": "Search sites",
-							"_postman_id": "fd101098-3881-4c47-862d-db9c64c181f9",
+							"id": "fd101098-3881-4c47-862d-db9c64c181f9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3404,10 +3326,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"site\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"site\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3415,7 +3334,7 @@
 						},
 						{
 							"name": "Search drives",
-							"_postman_id": "abf5f3fe-317d-419c-be49-bf3f0f8dec77",
+							"id": "abf5f3fe-317d-419c-be49-bf3f0f8dec77",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3431,10 +3350,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"drive\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n                //Note that personal OneDrive is not returned in this query\n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"drive\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n                //Note that personal OneDrive is not returned in this query\n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3442,7 +3358,7 @@
 						},
 						{
 							"name": "Search result template",
-							"_postman_id": "03f6be59-c750-4376-99b3-28773cb287c5",
+							"id": "03f6be59-c750-4376-99b3-28773cb287c5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3470,7 +3386,7 @@
 						},
 						{
 							"name": "Search external items",
-							"_postman_id": "56b636f4-1ddb-4326-8e61-f8610fe3f20c",
+							"id": "56b636f4-1ddb-4326-8e61-f8610fe3f20c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3486,10 +3402,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"externalItem\"\n            ],\n            \"contentSources\": [\n                \"/external/connections/sampleConnectionId\"\n            ],\n            \"query\": {\n                \"queryString\": \"sample\"\n            },\n            \"fields\": [\n                \"title\",\n                \"iconurl\",\n                \"lastModifiedDate\"\n            ]\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"externalItem\"\n            ],\n            \"contentSources\": [\n                \"/external/connections/sampleConnectionId\"\n            ],\n            \"query\": {\n                \"queryString\": \"sample\"\n            },\n            \"fields\": [\n                \"title\",\n                \"iconurl\",\n                \"lastModifiedDate\"\n            ]\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3525,7 +3438,7 @@
 									}
 								}
 							],
-							"_postman_id": "d2cc54b6-98d7-4496-9a1a-bdc15a4794cb",
+							"id": "d2cc54b6-98d7-4496-9a1a-bdc15a4794cb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3540,10 +3453,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"from\": 0,\n            \"size\": 15\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"from\": 0,\n            \"size\": 15\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3579,7 +3489,7 @@
 									}
 								}
 							],
-							"_postman_id": "b0838562-9653-4bd8-a010-a3c9bcb22aca",
+							"id": "b0838562-9653-4bd8-a010-a3c9bcb22aca",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3594,10 +3504,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"sortProperties\": [\n                {\n                    \"name\": \"lastModifiedDateTime\",\n                    \"isDescending\": \"true\" // default is false\n                }\n            ]\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"sortProperties\": [\n                {\n                    \"name\": \"lastModifiedDateTime\",\n                    \"isDescending\": \"true\" // default is false\n                }\n            ]\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3633,7 +3540,7 @@
 									}
 								}
 							],
-							"_postman_id": "26a36984-448d-4394-9a4d-970359120e61",
+							"id": "26a36984-448d-4394-9a4d-970359120e61",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3653,10 +3560,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"message\"\n      ],\n      \"query\": {\n        \"queryString\": \"informatino\"\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ],\n  \"queryAlterationOptions\": {\n    \"enableSuggestion\": true,\n    \"enableModification\": true\n  }\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"message\"\n      ],\n      \"query\": {\n        \"queryString\": \"informatino\"\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ],\n  \"queryAlterationOptions\": {\n    \"enableSuggestion\": true,\n    \"enableModification\": true\n  }\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3692,7 +3596,7 @@
 									}
 								}
 							],
-							"_postman_id": "8034c010-27f5-40a5-a5c4-5b84f3eb8911",
+							"id": "8034c010-27f5-40a5-a5c4-5b84f3eb8911",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3707,10 +3611,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3746,7 +3647,7 @@
 									}
 								}
 							],
-							"_postman_id": "f44a0e80-1713-41b1-a37d-2e9f778cc90d",
+							"id": "f44a0e80-1713-41b1-a37d-2e9f778cc90d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3761,10 +3662,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"Size\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsNumber\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0,\n                        \"ranges\": [\n                            {\n                                \"to\": \"100\"\n                            },\n                            {\n                                \"from\": \"100\",\n                                \"to\": \"1000\"\n                            },\n                            {\n                                \"from\": \"1000\"\n                            }\n                        ]\n                    }\n                }\n            ]\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"Size\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsNumber\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0,\n                        \"ranges\": [\n                            {\n                                \"to\": \"100\"\n                            },\n                            {\n                                \"from\": \"100\",\n                                \"to\": \"1000\"\n                            },\n                            {\n                                \"from\": \"1000\"\n                            }\n                        ]\n                    }\n                }\n            ]\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3800,7 +3698,7 @@
 									}
 								}
 							],
-							"_postman_id": "1f4594d2-2696-433c-9388-0b0852d7af8f",
+							"id": "1f4594d2-2696-433c-9388-0b0852d7af8f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3815,10 +3713,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregationFilters\": [\n                \"contentclass:\\\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\\\"\",\n                \"FileType:\\\"ǂǂ646f6378\\\"\"                \n            ],\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregationFilters\": [\n                \"contentclass:\\\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\\\"\",\n                \"FileType:\\\"ǂǂ646f6378\\\"\"                \n            ],\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3854,7 +3749,7 @@
 									}
 								}
 							],
-							"_postman_id": "5a8e65f3-1970-4c54-9664-e5368c86b583",
+							"id": "5a8e65f3-1970-4c54-9664-e5368c86b583",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3869,10 +3764,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"trimDuplicate\": true\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"trimDuplicate\": true\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
@@ -3908,7 +3800,7 @@
 									}
 								}
 							],
-							"_postman_id": "80b23659-cc43-4285-917e-ef910c09bf8e",
+							"id": "80b23659-cc43-4285-917e-ef910c09bf8e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3923,18 +3815,14 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\",\n                \"queryTemplate\": \"({searchTerms})\"\n            }\n        }\n    ]\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\",\n                \"queryTemplate\": \"({searchTerms})\"\n            }\n        }\n    ]\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/search/query"
 							},
 							"response": []
 						}
 					],
-					"_postman_id": "986c7bde-b468-44e8-86b6-607b453646ae",
-					"_postman_isSubFolder": true
+					"id": "986c7bde-b468-44e8-86b6-607b453646ae"
 				},
 				{
 					"name": "Security",
@@ -3969,7 +3857,7 @@
 									}
 								}
 							],
-							"_postman_id": "f3a318c9-f52c-4355-9780-f0c9399074b8",
+							"id": "f3a318c9-f52c-4355-9780-f0c9399074b8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4010,7 +3898,7 @@
 									}
 								}
 							],
-							"_postman_id": "9c8f9856-a390-46b6-aae9-d8b738a68b4c",
+							"id": "9c8f9856-a390-46b6-aae9-d8b738a68b4c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4074,7 +3962,7 @@
 									}
 								}
 							],
-							"_postman_id": "a5756010-f916-47b6-907f-8c9047f0f858",
+							"id": "a5756010-f916-47b6-907f-8c9047f0f858",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4138,7 +4026,7 @@
 									}
 								}
 							],
-							"_postman_id": "ea890d32-995a-4de2-be84-a04ba8d74ece",
+							"id": "ea890d32-995a-4de2-be84-a04ba8d74ece",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4202,7 +4090,7 @@
 									}
 								}
 							],
-							"_postman_id": "bb80a1bd-dc13-4d0a-9e8c-679d82b6044f",
+							"id": "bb80a1bd-dc13-4d0a-9e8c-679d82b6044f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4262,7 +4150,7 @@
 									}
 								}
 							],
-							"_postman_id": "396b7b5b-29eb-4c1e-8a3d-e5ef88cd8dbd",
+							"id": "396b7b5b-29eb-4c1e-8a3d-e5ef88cd8dbd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4326,7 +4214,7 @@
 									}
 								}
 							],
-							"_postman_id": "f0a3c4f4-a383-431e-9d98-4cc8cadbf211",
+							"id": "f0a3c4f4-a383-431e-9d98-4cc8cadbf211",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4386,7 +4274,7 @@
 									}
 								}
 							],
-							"_postman_id": "e526134f-dee8-4546-9aa6-5ae9cc738526",
+							"id": "e526134f-dee8-4546-9aa6-5ae9cc738526",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4451,7 +4339,7 @@
 									}
 								}
 							],
-							"_postman_id": "78ba3ff2-7c8b-420e-965d-20d52e4c712b",
+							"id": "78ba3ff2-7c8b-420e-965d-20d52e4c712b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4492,7 +4380,7 @@
 									}
 								}
 							],
-							"_postman_id": "82e2b0d5-7730-46fc-90f0-f4a892c8295d",
+							"id": "82e2b0d5-7730-46fc-90f0-f4a892c8295d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4538,7 +4426,7 @@
 									}
 								}
 							],
-							"_postman_id": "50ecb9a7-1caa-46e9-87e0-fb9085bdb069",
+							"id": "50ecb9a7-1caa-46e9-87e0-fb9085bdb069",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4584,7 +4472,7 @@
 									}
 								}
 							],
-							"_postman_id": "64ee4642-20f0-4b83-8a63-ee6ee27b496c",
+							"id": "64ee4642-20f0-4b83-8a63-ee6ee27b496c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4596,8 +4484,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "cbd209f7-4291-419b-b4c7-5d5753c0aa24",
-					"_postman_isSubFolder": true
+					"id": "cbd209f7-4291-419b-b4c7-5d5753c0aa24"
 				},
 				{
 					"name": "SharePoint",
@@ -4637,7 +4524,7 @@
 									}
 								}
 							],
-							"_postman_id": "354948e3-2f1a-4804-b9a4-896a92473f1a",
+							"id": "354948e3-2f1a-4804-b9a4-896a92473f1a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4689,7 +4576,7 @@
 									}
 								}
 							],
-							"_postman_id": "79c3e1d0-08ac-4cf4-9e66-bd2013f03ce3",
+							"id": "79c3e1d0-08ac-4cf4-9e66-bd2013f03ce3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4736,7 +4623,7 @@
 									}
 								}
 							],
-							"_postman_id": "d97bff59-efa1-4358-bb8f-92b4c4c7c27a",
+							"id": "d97bff59-efa1-4358-bb8f-92b4c4c7c27a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4801,7 +4688,7 @@
 									}
 								}
 							],
-							"_postman_id": "6e9d6c4b-13f7-40c1-a372-b7b283edcf96",
+							"id": "6e9d6c4b-13f7-40c1-a372-b7b283edcf96",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4848,7 +4735,7 @@
 									}
 								}
 							],
-							"_postman_id": "08b8e388-9ebf-4222-af9c-54b9422a8086",
+							"id": "08b8e388-9ebf-4222-af9c-54b9422a8086",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4895,7 +4782,7 @@
 									}
 								}
 							],
-							"_postman_id": "39d462b9-5620-42e2-9e86-c792b4ae3a9d",
+							"id": "39d462b9-5620-42e2-9e86-c792b4ae3a9d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4947,7 +4834,7 @@
 									}
 								}
 							],
-							"_postman_id": "2c2d752b-32d6-45a5-aef1-dd365e403d79",
+							"id": "2c2d752b-32d6-45a5-aef1-dd365e403d79",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4994,7 +4881,7 @@
 									}
 								}
 							],
-							"_postman_id": "7e0ff422-bd2f-4248-8c46-0728bb3dd06e",
+							"id": "7e0ff422-bd2f-4248-8c46-0728bb3dd06e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5041,7 +4928,7 @@
 									}
 								}
 							],
-							"_postman_id": "dbe4e19e-71e9-4276-8ced-1b989b985e7a",
+							"id": "dbe4e19e-71e9-4276-8ced-1b989b985e7a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5088,7 +4975,7 @@
 									}
 								}
 							],
-							"_postman_id": "47c77074-1bbc-4145-9186-e4633ddb6176",
+							"id": "47c77074-1bbc-4145-9186-e4633ddb6176",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5135,7 +5022,7 @@
 									}
 								}
 							],
-							"_postman_id": "09f6f4eb-c8fe-416e-bb77-f2e3838c1991",
+							"id": "09f6f4eb-c8fe-416e-bb77-f2e3838c1991",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5180,8 +5067,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "45e3a777-2d83-4854-b70b-c5b05179ba68",
-					"_postman_isSubFolder": true
+					"id": "45e3a777-2d83-4854-b70b-c5b05179ba68"
 				},
 				{
 					"name": "Subscriptions",
@@ -5216,7 +5102,7 @@
 									}
 								}
 							],
-							"_postman_id": "be4f1649-c6bc-4be9-9b0d-bdc41d6bf3db",
+							"id": "be4f1649-c6bc-4be9-9b0d-bdc41d6bf3db",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5234,8 +5120,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "ed27e214-1ed2-4563-b512-b4dd7a2d49ab",
-					"_postman_isSubFolder": true
+					"id": "ed27e214-1ed2-4563-b512-b4dd7a2d49ab"
 				},
 				{
 					"name": "Tasks - Planner",
@@ -5275,7 +5160,7 @@
 									}
 								}
 							],
-							"_postman_id": "eb67191d-b3da-4590-b2d6-0c2b864cfbf0",
+							"id": "eb67191d-b3da-4590-b2d6-0c2b864cfbf0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5327,7 +5212,7 @@
 									}
 								}
 							],
-							"_postman_id": "9c35af74-3e77-469a-b177-6421a2f9426f",
+							"id": "9c35af74-3e77-469a-b177-6421a2f9426f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5379,7 +5264,7 @@
 									}
 								}
 							],
-							"_postman_id": "93450678-9584-4856-9868-c5fc47136f53",
+							"id": "93450678-9584-4856-9868-c5fc47136f53",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5431,7 +5316,7 @@
 									}
 								}
 							],
-							"_postman_id": "2f647f6d-2a72-4b7b-a552-c564e9879b5b",
+							"id": "2f647f6d-2a72-4b7b-a552-c564e9879b5b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5483,7 +5368,7 @@
 									}
 								}
 							],
-							"_postman_id": "324bf895-38d9-4b7c-88a7-ee368231dbd2",
+							"id": "324bf895-38d9-4b7c-88a7-ee368231dbd2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5503,10 +5388,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"title\": \"Updated plan title\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"title\": \"Updated plan title\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}"
 							},
@@ -5547,7 +5429,7 @@
 									}
 								}
 							],
-							"_postman_id": "9a0e1e19-721e-437e-9f32-e2fb82275d3d",
+							"id": "9a0e1e19-721e-437e-9f32-e2fb82275d3d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5600,7 +5482,7 @@
 									}
 								}
 							],
-							"_postman_id": "e1b1b084-3b20-4916-b20f-d56072254ead",
+							"id": "e1b1b084-3b20-4916-b20f-d56072254ead",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5620,10 +5502,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"New bucket\",\n  \"planId\": \"{{PlanId}}\",\n  \"orderHint\": \" !\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"name\": \"New bucket\",\n  \"planId\": \"{{PlanId}}\",\n  \"orderHint\": \" !\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/planner/buckets"
 							},
@@ -5659,7 +5538,7 @@
 									}
 								}
 							],
-							"_postman_id": "84ffb00d-a927-453d-9b77-19179ccc62a0",
+							"id": "84ffb00d-a927-453d-9b77-19179ccc62a0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5679,10 +5558,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"Updated bucket name\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"name\": \"Updated bucket name\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/planner/buckets/{{BucketId}}"
 							},
@@ -5723,7 +5599,7 @@
 									}
 								}
 							],
-							"_postman_id": "1f80b8e4-2559-4c80-9147-39aad36f4a5a",
+							"id": "1f80b8e4-2559-4c80-9147-39aad36f4a5a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5775,7 +5651,7 @@
 									}
 								}
 							],
-							"_postman_id": "77a5b585-4cd2-4b17-aa05-24088e499183",
+							"id": "77a5b585-4cd2-4b17-aa05-24088e499183",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5828,7 +5704,7 @@
 									}
 								}
 							],
-							"_postman_id": "b8010607-c13a-4afd-bfbf-07b5e115db1c",
+							"id": "b8010607-c13a-4afd-bfbf-07b5e115db1c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5843,10 +5719,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"planId\": \"{{PlanId}}\",\n  \"title\": \"New Task\",\n  \"assignments\": {}\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"planId\": \"{{PlanId}}\",\n  \"title\": \"New Task\",\n  \"assignments\": {}\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/planner/tasks"
 							},
@@ -5887,7 +5760,7 @@
 									}
 								}
 							],
-							"_postman_id": "abdfe2b6-e4e3-4eba-af6d-58fc3d5d9666",
+							"id": "abdfe2b6-e4e3-4eba-af6d-58fc3d5d9666",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5907,10 +5780,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"title\": \"Updated task title\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"title\": \"Updated task title\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/planner/tasks/{{TaskId}}"
 							},
@@ -5951,7 +5821,7 @@
 									}
 								}
 							],
-							"_postman_id": "5dd45251-108b-414d-9623-99bef5240825",
+							"id": "5dd45251-108b-414d-9623-99bef5240825",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -5969,8 +5839,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "4e8b9afb-00e6-4c27-9240-599fdd90fb1f",
-					"_postman_isSubFolder": true
+					"id": "4e8b9afb-00e6-4c27-9240-599fdd90fb1f"
 				},
 				{
 					"name": "Tasks - Todo",
@@ -6010,7 +5879,7 @@
 									}
 								}
 							],
-							"_postman_id": "b0a9445a-0f11-47c5-8e19-48d75e5d2a82",
+							"id": "b0a9445a-0f11-47c5-8e19-48d75e5d2a82",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6060,7 +5929,7 @@
 									}
 								}
 							],
-							"_postman_id": "09738edf-edd5-4dff-aed0-3c4bd9577822",
+							"id": "09738edf-edd5-4dff-aed0-3c4bd9577822",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6112,7 +5981,7 @@
 									}
 								}
 							],
-							"_postman_id": "009d4848-c726-498a-b7e7-7f4899f3af65",
+							"id": "009d4848-c726-498a-b7e7-7f4899f3af65",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6127,10 +5996,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"displayName\": \"Postman created list\"\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n  \"displayName\": \"Postman created list\"\r\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/todo/lists/"
 							},
@@ -6171,7 +6037,7 @@
 									}
 								}
 							],
-							"_postman_id": "6cdac1aa-0f0c-4fa1-b808-173bc1cb7109",
+							"id": "6cdac1aa-0f0c-4fa1-b808-173bc1cb7109",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6186,10 +6052,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"displayName\": \"Postman created items\"\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n  \"displayName\": \"Postman created items\"\r\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/todo/lists/{{TaskListId}}"
 							},
@@ -6230,7 +6093,7 @@
 									}
 								}
 							],
-							"_postman_id": "bc792ff2-0042-4681-bf0c-1509c29b7f4a",
+							"id": "bc792ff2-0042-4681-bf0c-1509c29b7f4a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6245,10 +6108,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {}
-									}
+									"raw": ""
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/todo/lists/{{TaskListId}}"
 							},
@@ -6289,7 +6149,7 @@
 									}
 								}
 							],
-							"_postman_id": "fe7907fb-faa7-462d-a82d-7cfc7da6b4d9",
+							"id": "fe7907fb-faa7-462d-a82d-7cfc7da6b4d9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6341,7 +6201,7 @@
 									}
 								}
 							],
-							"_postman_id": "e1272654-5ef3-4b51-a152-cee438cc1814",
+							"id": "e1272654-5ef3-4b51-a152-cee438cc1814",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6356,10 +6216,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \"title\":\"Postman created Task\",\r\n   \"linkedResources\":[\r\n      {\r\n         \"webUrl\":\"http://microsoft.com\",\r\n         \"applicationName\":\"Microsoft\",\r\n         \"displayName\":\"Microsoft\"\r\n      }\r\n   ]\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n   \"title\":\"Postman created Task\",\r\n   \"linkedResources\":[\r\n      {\r\n         \"webUrl\":\"http://microsoft.com\",\r\n         \"applicationName\":\"Microsoft\",\r\n         \"displayName\":\"Microsoft\"\r\n      }\r\n   ]\r\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/todo/lists/{{TaskListId}}/tasks"
 							},
@@ -6398,7 +6255,7 @@
 									}
 								}
 							],
-							"_postman_id": "10c0bee9-72ec-4756-b393-b696e0a29727",
+							"id": "10c0bee9-72ec-4756-b393-b696e0a29727",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6413,10 +6270,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \"dueDateTime\":{\r\n      \"dateTime\":\"2021-04-19T00:00:00\",\r\n      \"timeZone\":\"Eastern Standard Time\"\r\n   }\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n   \"dueDateTime\":{\r\n      \"dateTime\":\"2021-04-19T00:00:00\",\r\n      \"timeZone\":\"Eastern Standard Time\"\r\n   }\r\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/me/todo/lists/{{TaskListId}}/tasks/{{TaskId}}"
 							},
@@ -6456,7 +6310,7 @@
 									}
 								}
 							],
-							"_postman_id": "365824f0-fcb6-4527-8589-db07890e2487",
+							"id": "365824f0-fcb6-4527-8589-db07890e2487",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6474,8 +6328,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "d9dcc90a-43a9-43ba-9704-8c6381fe081f",
-					"_postman_isSubFolder": true
+					"id": "d9dcc90a-43a9-43ba-9704-8c6381fe081f"
 				},
 				{
 					"name": "Teams",
@@ -6515,7 +6368,7 @@
 									}
 								}
 							],
-							"_postman_id": "f86fc4bd-16f4-410d-8648-5b54079aeda5",
+							"id": "f86fc4bd-16f4-410d-8648-5b54079aeda5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6556,7 +6409,7 @@
 									}
 								}
 							],
-							"_postman_id": "9b6db753-276a-4122-b4d8-e0129d431985",
+							"id": "9b6db753-276a-4122-b4d8-e0129d431985",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6602,7 +6455,7 @@
 									}
 								}
 							],
-							"_postman_id": "be1e9031-e47b-4d69-a5d8-d0f02c9deaf8",
+							"id": "be1e9031-e47b-4d69-a5d8-d0f02c9deaf8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6648,7 +6501,7 @@
 									}
 								}
 							],
-							"_postman_id": "e407e251-d882-45ac-be82-940fafc2ba98",
+							"id": "e407e251-d882-45ac-be82-940fafc2ba98",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6695,7 +6548,7 @@
 									}
 								}
 							],
-							"_postman_id": "ec334629-c328-4189-8cb9-69684535efe7",
+							"id": "ec334629-c328-4189-8cb9-69684535efe7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6711,10 +6564,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"template@odata.bind\": \"https://graph.microsoft.com/v1.0/teamsTemplates('standard')\",\n  \"displayName\": \"My Sample Team\",\n  \"description\": \"My Sample Team’s Description\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"template@odata.bind\": \"https://graph.microsoft.com/v1.0/teamsTemplates('standard')\",\n  \"displayName\": \"My Sample Team\",\n  \"description\": \"My Sample Team’s Description\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/teams"
 							},
@@ -6755,7 +6605,7 @@
 									}
 								}
 							],
-							"_postman_id": "32ab6c94-a7a5-45c5-bf49-908fe9241ae5",
+							"id": "32ab6c94-a7a5-45c5-bf49-908fe9241ae5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6771,10 +6621,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"displayName\": \"Architecture Discussion\",\n  \"description\": \"This channel is where we debate all future architecture plans\"\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"displayName\": \"Architecture Discussion\",\n  \"description\": \"This channel is where we debate all future architecture plans\"\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels"
 							},
@@ -6815,7 +6662,7 @@
 									}
 								}
 							],
-							"_postman_id": "d3e6bfe7-f644-4e2e-94e8-8cec6d3a796d",
+							"id": "d3e6bfe7-f644-4e2e-94e8-8cec6d3a796d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6883,7 +6730,7 @@
 									}
 								}
 							],
-							"_postman_id": "22b5776f-ce6c-422c-81c7-3c62b34548c9",
+							"id": "22b5776f-ce6c-422c-81c7-3c62b34548c9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -6953,7 +6800,7 @@
 									}
 								}
 							],
-							"_postman_id": "4ac84b90-5448-4884-829e-2a37b0b3d334",
+							"id": "4ac84b90-5448-4884-829e-2a37b0b3d334",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7006,7 +6853,7 @@
 									}
 								}
 							],
-							"_postman_id": "556916a9-2703-4841-b8bd-ec32dffc8f9f",
+							"id": "556916a9-2703-4841-b8bd-ec32dffc8f9f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7054,7 +6901,7 @@
 									}
 								}
 							],
-							"_postman_id": "3b532e72-b87d-4843-a2c0-c708a0b4d52d",
+							"id": "3b532e72-b87d-4843-a2c0-c708a0b4d52d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7107,7 +6954,7 @@
 									}
 								}
 							],
-							"_postman_id": "55da4cc8-0ac5-4f15-a7cb-6f0c75269a76",
+							"id": "55da4cc8-0ac5-4f15-a7cb-6f0c75269a76",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7155,7 +7002,7 @@
 									}
 								}
 							],
-							"_postman_id": "87ad5b28-0ebd-4af3-9086-17d311134707",
+							"id": "87ad5b28-0ebd-4af3-9086-17d311134707",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7208,7 +7055,7 @@
 									}
 								}
 							],
-							"_postman_id": "93a2952b-322d-4b32-8d7e-d4534d06dc6f",
+							"id": "93a2952b-322d-4b32-8d7e-d4534d06dc6f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7224,10 +7071,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"body\": {\n    \"content\": \"Hello World!\"\n  }\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"body\": {\n    \"content\": \"Hello World!\"\n  }\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/teams/{{TeamId}}/channels/{{ChannelId}}/messages"
 							},
@@ -7268,7 +7112,7 @@
 									}
 								}
 							],
-							"_postman_id": "ce7584e7-b003-4364-8bb7-936fdd22ed9d",
+							"id": "ce7584e7-b003-4364-8bb7-936fdd22ed9d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7284,18 +7128,14 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"body\": {\n    \"contentType\": \"html\",\n    \"content\": \"<div><div>\\n<div><img alt=\\\"GIF Image\\\" height=\\\"250\\\" src=\\\"https://media3.giphy.com/media/f5xmRWRu4zxxh2mE5v/giphy.gif?cid=de9bf95eevnce0lknjlbneccchvdkn991jea1gtmw2zmvdke&amp;rid=giphy.gif\\\" width=\\\"250\\\" style=\\\"max-height:250px; width:250px; height:250px\\\"></div>\\n\\n\\n</div>\\n</div>\"\n  }\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\n  \"body\": {\n    \"contentType\": \"html\",\n    \"content\": \"<div><div>\\n<div><img alt=\\\"GIF Image\\\" height=\\\"250\\\" src=\\\"https://media3.giphy.com/media/f5xmRWRu4zxxh2mE5v/giphy.gif?cid=de9bf95eevnce0lknjlbneccchvdkn991jea1gtmw2zmvdke&amp;rid=giphy.gif\\\" width=\\\"250\\\" style=\\\"max-height:250px; width:250px; height:250px\\\"></div>\\n\\n\\n</div>\\n</div>\"\n  }\n}"
 								},
 								"url": "https://graph.microsoft.com/beta/teams/{{TeamId}}/channels/{{ChannelId}}/messages"
 							},
 							"response": []
 						}
 					],
-					"_postman_id": "2acb5ece-a5f5-4c25-a1ec-b464227cd172",
-					"_postman_isSubFolder": true
+					"id": "2acb5ece-a5f5-4c25-a1ec-b464227cd172"
 				},
 				{
 					"name": "Users",
@@ -7335,7 +7175,7 @@
 									}
 								}
 							],
-							"_postman_id": "5b90aff8-0e90-4b18-97d5-7fbf19822043",
+							"id": "5b90aff8-0e90-4b18-97d5-7fbf19822043",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7376,7 +7216,7 @@
 									}
 								}
 							],
-							"_postman_id": "9d14d4e6-f918-4bcf-953a-8ed20c65fdb3",
+							"id": "9d14d4e6-f918-4bcf-953a-8ed20c65fdb3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7417,7 +7257,7 @@
 									}
 								}
 							],
-							"_postman_id": "4ebd4ac4-a77a-4326-a3ac-02fc46d9e3b8",
+							"id": "4ebd4ac4-a77a-4326-a3ac-02fc46d9e3b8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7477,7 +7317,7 @@
 									}
 								}
 							],
-							"_postman_id": "1799e186-9c6b-4089-8e8b-9749c9812a30",
+							"id": "1799e186-9c6b-4089-8e8b-9749c9812a30",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7518,7 +7358,7 @@
 									}
 								}
 							],
-							"_postman_id": "25e345c6-8c84-48f9-bdbb-7c8f2ffdf49d",
+							"id": "25e345c6-8c84-48f9-bdbb-7c8f2ffdf49d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7559,7 +7399,7 @@
 									}
 								}
 							],
-							"_postman_id": "a23b33f9-2921-484e-8df2-ec88957fb984",
+							"id": "a23b33f9-2921-484e-8df2-ec88957fb984",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7600,7 +7440,7 @@
 									}
 								}
 							],
-							"_postman_id": "d036fd16-3918-4fe2-96cd-3fc04136ece2",
+							"id": "d036fd16-3918-4fe2-96cd-3fc04136ece2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7641,7 +7481,7 @@
 									}
 								}
 							],
-							"_postman_id": "03a8d97a-1e54-47ba-b815-7a6b757f5c6f",
+							"id": "03a8d97a-1e54-47ba-b815-7a6b757f5c6f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7682,7 +7522,7 @@
 									}
 								}
 							],
-							"_postman_id": "039015f6-3f32-4c40-82cf-a69bfbdb51eb",
+							"id": "039015f6-3f32-4c40-82cf-a69bfbdb51eb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7741,7 +7581,7 @@
 									}
 								}
 							],
-							"_postman_id": "e75bf087-3034-49e6-9ba0-31aabd241dc0",
+							"id": "e75bf087-3034-49e6-9ba0-31aabd241dc0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7782,7 +7622,7 @@
 									}
 								}
 							],
-							"_postman_id": "55a7d927-b9be-4849-9c15-cdc6f52cb334",
+							"id": "55a7d927-b9be-4849-9c15-cdc6f52cb334",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7823,7 +7663,7 @@
 									}
 								}
 							],
-							"_postman_id": "3c8b817e-b221-4f68-8c8e-c57a019f9309",
+							"id": "3c8b817e-b221-4f68-8c8e-c57a019f9309",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7870,7 +7710,7 @@
 									}
 								}
 							],
-							"_postman_id": "93167c5b-3d7c-4d42-aae8-61722a1d94ce",
+							"id": "93167c5b-3d7c-4d42-aae8-61722a1d94ce",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -7899,8 +7739,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "fb6faadf-ab93-4cc5-93fc-219405b3cdcd",
-					"_postman_isSubFolder": true
+					"id": "fb6faadf-ab93-4cc5-93fc-219405b3cdcd"
 				},
 				{
 					"name": "Windows Updates (beta)",
@@ -7938,7 +7777,7 @@
 											}
 										}
 									],
-									"_postman_id": "baadfa04-586e-441c-a3aa-27a7657cfcfe",
+									"id": "baadfa04-586e-441c-a3aa-27a7657cfcfe",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7950,8 +7789,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "1919463c-bbb4-4af1-ba62-ecce684d91f6",
-							"_postman_isSubFolder": true
+							"id": "1919463c-bbb4-4af1-ba62-ecce684d91f6"
 						},
 						{
 							"name": "Deployment",
@@ -7989,7 +7827,7 @@
 													}
 												}
 											],
-											"_postman_id": "ecd2f253-134b-42b2-93d5-224e193e754e",
+											"id": "ecd2f253-134b-42b2-93d5-224e193e754e",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8030,7 +7868,7 @@
 													}
 												}
 											],
-											"_postman_id": "01d19214-c34c-4b52-8209-a4bf2dcc75bc",
+											"id": "01d19214-c34c-4b52-8209-a4bf2dcc75bc",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8071,7 +7909,7 @@
 													}
 												}
 											],
-											"_postman_id": "1580c6ba-1a56-485a-b0ef-273deec46559",
+											"id": "1580c6ba-1a56-485a-b0ef-273deec46559",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8121,7 +7959,7 @@
 													}
 												}
 											],
-											"_postman_id": "0ddaf5d3-80f5-4368-887c-ea6c08eed8c8",
+											"id": "0ddaf5d3-80f5-4368-887c-ea6c08eed8c8",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8171,7 +8009,7 @@
 													}
 												}
 											],
-											"_postman_id": "69ee678d-3cdc-49a6-8aad-6d3a916f6384",
+											"id": "69ee678d-3cdc-49a6-8aad-6d3a916f6384",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8221,7 +8059,7 @@
 													}
 												}
 											],
-											"_postman_id": "c30e91ba-e0b3-4bae-8043-f2b367da7f3c",
+											"id": "c30e91ba-e0b3-4bae-8043-f2b367da7f3c",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8242,8 +8080,7 @@
 											"response": []
 										}
 									],
-									"_postman_id": "35d745c3-3731-497f-bc4b-bef302d38a07",
-									"_postman_isSubFolder": true
+									"id": "35d745c3-3731-497f-bc4b-bef302d38a07"
 								},
 								{
 									"name": "Create deployment (feature update)",
@@ -8275,7 +8112,7 @@
 											}
 										}
 									],
-									"_postman_id": "971aa901-5bd0-4d53-a26d-3ed3b83f4c17",
+									"id": "971aa901-5bd0-4d53-a26d-3ed3b83f4c17",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8325,7 +8162,7 @@
 											}
 										}
 									],
-									"_postman_id": "95cd1401-2963-439b-a7c6-3f59feb1b026",
+									"id": "95cd1401-2963-439b-a7c6-3f59feb1b026",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8375,7 +8212,7 @@
 											}
 										}
 									],
-									"_postman_id": "e4abb6bc-50a8-4585-8b1b-df460f24a844",
+									"id": "e4abb6bc-50a8-4585-8b1b-df460f24a844",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8425,7 +8262,7 @@
 											}
 										}
 									],
-									"_postman_id": "5625ad6d-19ed-49a8-9243-01f29e4f171e",
+									"id": "5625ad6d-19ed-49a8-9243-01f29e4f171e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8475,7 +8312,7 @@
 											}
 										}
 									],
-									"_postman_id": "ff07d1e0-935b-41a8-a24e-1beea06c6826",
+									"id": "ff07d1e0-935b-41a8-a24e-1beea06c6826",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8516,7 +8353,7 @@
 											}
 										}
 									],
-									"_postman_id": "4c95f2f3-1da1-41d0-9f35-2ced3fe57590",
+									"id": "4c95f2f3-1da1-41d0-9f35-2ced3fe57590",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8557,7 +8394,7 @@
 											}
 										}
 									],
-									"_postman_id": "c48fd77a-1b30-48d8-94cc-98bf8b2ab77e",
+									"id": "c48fd77a-1b30-48d8-94cc-98bf8b2ab77e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8607,7 +8444,7 @@
 											}
 										}
 									],
-									"_postman_id": "162f391a-68ac-4a1b-a403-671e274662ab",
+									"id": "162f391a-68ac-4a1b-a403-671e274662ab",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8657,7 +8494,7 @@
 											}
 										}
 									],
-									"_postman_id": "1376aad8-bddc-499c-8f82-3a9721a2989b",
+									"id": "1376aad8-bddc-499c-8f82-3a9721a2989b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8707,7 +8544,7 @@
 											}
 										}
 									],
-									"_postman_id": "6ad4cc00-89f7-4116-ab5b-b62b62be910b",
+									"id": "6ad4cc00-89f7-4116-ab5b-b62b62be910b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8719,8 +8556,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "fdd53ce3-50a9-4079-b6f8-b1a192821585",
-							"_postman_isSubFolder": true
+							"id": "fdd53ce3-50a9-4079-b6f8-b1a192821585"
 						},
 						{
 							"name": "Updatable asset",
@@ -8758,7 +8594,7 @@
 													}
 												}
 											],
-											"_postman_id": "6f661681-7e31-4640-a0e5-3a126404d4de",
+											"id": "6f661681-7e31-4640-a0e5-3a126404d4de",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8821,7 +8657,7 @@
 													}
 												}
 											],
-											"_postman_id": "5f228cde-57bd-4e53-94e3-57932d728cbd",
+											"id": "5f228cde-57bd-4e53-94e3-57932d728cbd",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8862,7 +8698,7 @@
 													}
 												}
 											],
-											"_postman_id": "42e40d5b-7983-47a0-b738-be8b755ba1e0",
+											"id": "42e40d5b-7983-47a0-b738-be8b755ba1e0",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8903,7 +8739,7 @@
 													}
 												}
 											],
-											"_postman_id": "70a10efa-4a36-4400-9c23-46b6bccf8d15",
+											"id": "70a10efa-4a36-4400-9c23-46b6bccf8d15",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8953,7 +8789,7 @@
 													}
 												}
 											],
-											"_postman_id": "c71bf7a3-f23b-47ff-979e-b99da45ebfe9",
+											"id": "c71bf7a3-f23b-47ff-979e-b99da45ebfe9",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -8974,8 +8810,7 @@
 											"response": []
 										}
 									],
-									"_postman_id": "65903245-0772-438a-bad1-ef241b85bd29",
-									"_postman_isSubFolder": true
+									"id": "65903245-0772-438a-bad1-ef241b85bd29"
 								},
 								{
 									"name": "List updatable assets",
@@ -9007,7 +8842,7 @@
 											}
 										}
 									],
-									"_postman_id": "17527fce-bdb7-407f-b7bb-4d04ebbf346c",
+									"id": "17527fce-bdb7-407f-b7bb-4d04ebbf346c",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9048,7 +8883,7 @@
 											}
 										}
 									],
-									"_postman_id": "c61c13f1-3c3b-4b8f-8852-c825a872079f",
+									"id": "c61c13f1-3c3b-4b8f-8852-c825a872079f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9089,7 +8924,7 @@
 											}
 										}
 									],
-									"_postman_id": "ea7c1948-99f8-4c74-9838-5be38911ba42",
+									"id": "ea7c1948-99f8-4c74-9838-5be38911ba42",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9101,15 +8936,13 @@
 									"response": []
 								}
 							],
-							"_postman_id": "6ca7c860-92b7-4afe-aa8a-403dd913b8fc",
-							"_postman_isSubFolder": true
+							"id": "6ca7c860-92b7-4afe-aa8a-403dd913b8fc"
 						}
 					],
-					"_postman_id": "f9b5cc45-73f2-4862-b1d0-a5073db23cc4",
-					"_postman_isSubFolder": true
+					"id": "f9b5cc45-73f2-4862-b1d0-a5073db23cc4"
 				}
 			],
-			"_postman_id": "9da9ae47-73b6-4010-b3e7-34e6f61332d4",
+			"id": "9da9ae47-73b6-4010-b3e7-34e6f61332d4",
 			"auth": {
 				"type": "oauth2",
 				"oauth2": {
@@ -9163,7 +8996,7 @@
 							"item": [
 								{
 									"name": "Get all connections",
-									"_postman_id": "69ef7536-3bb6-4a55-bd70-69e1e11fe8c1",
+									"id": "69ef7536-3bb6-4a55-bd70-69e1e11fe8c1",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9188,7 +9021,7 @@
 											}
 										}
 									],
-									"_postman_id": "2ceabe2c-85e3-4968-bb68-cfb0bbfc3851",
+									"id": "2ceabe2c-85e3-4968-bb68-cfb0bbfc3851",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9204,10 +9037,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"id\": \"sampleConnectionId\",\r\n    \"name\": \"Sample connection\",\r\n    \"description\": \"Sample connection description\"\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"id\": \"sampleConnectionId\",\r\n    \"name\": \"Sample connection\",\r\n    \"description\": \"Sample connection description\"\r\n}"
 										},
 										"url": "https://graph.microsoft.com/v1.0/external/connections"
 									},
@@ -9227,7 +9057,7 @@
 											}
 										}
 									],
-									"_postman_id": "d594a544-e33a-48b8-b632-44e811388445",
+									"id": "d594a544-e33a-48b8-b632-44e811388445",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9252,7 +9082,7 @@
 											}
 										}
 									],
-									"_postman_id": "ae38f69a-0043-4930-ac97-db0d68a13634",
+									"id": "ae38f69a-0043-4930-ac97-db0d68a13634",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9277,7 +9107,7 @@
 											}
 										}
 									],
-									"_postman_id": "e8ba333d-64c5-4138-b9c9-9ec590d14963",
+									"id": "e8ba333d-64c5-4138-b9c9-9ec590d14963",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9298,10 +9128,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"baseType\": \"microsoft.graph.externalItem\",\r\n    \"properties\": [\r\n        {\r\n            \"name\": \"id\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"title\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": true,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"title\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"extension\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": true,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"createdBy\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": true,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"createdBy\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"createdDateTime\",\r\n            \"type\": \"dateTime\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"createdDateTime\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"lastModifiedBy\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"lastModifiedDate\",\r\n            \"type\": \"dateTime\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"lastModifiedDateTime\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"url\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [\r\n                \"url\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"description\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"authors\",\r\n            \"type\": \"stringCollection\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [\r\n                \"authors\"\r\n            ],\r\n            \"aliases\": []\r\n        }\r\n    ]\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"baseType\": \"microsoft.graph.externalItem\",\r\n    \"properties\": [\r\n        {\r\n            \"name\": \"id\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"title\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": true,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"title\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"extension\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": true,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"createdBy\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": true,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"createdBy\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"createdDateTime\",\r\n            \"type\": \"dateTime\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"createdDateTime\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"lastModifiedBy\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"lastModifiedDate\",\r\n            \"type\": \"dateTime\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": true,\r\n            \"labels\": [\r\n                \"lastModifiedDateTime\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"url\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [\r\n                \"url\"\r\n            ],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"description\",\r\n            \"type\": \"string\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [],\r\n            \"aliases\": []\r\n        },\r\n        {\r\n            \"name\": \"authors\",\r\n            \"type\": \"stringCollection\",\r\n            \"isSearchable\": false,\r\n            \"isRetrievable\": true,\r\n            \"isQueryable\": false,\r\n            \"labels\": [\r\n                \"authors\"\r\n            ],\r\n            \"aliases\": []\r\n        }\r\n    ]\r\n}"
 										},
 										"url": "https://graph.microsoft.com/v1.0/external/connections/sampleConnectionId/schema"
 									},
@@ -9321,7 +9148,7 @@
 											}
 										}
 									],
-									"_postman_id": "d888ea1d-54ab-409a-a6be-17be2b722790",
+									"id": "d888ea1d-54ab-409a-a6be-17be2b722790",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9346,7 +9173,7 @@
 											}
 										}
 									],
-									"_postman_id": "2fb3351f-bdae-4595-9af4-bd4e022d8ab3",
+									"id": "2fb3351f-bdae-4595-9af4-bd4e022d8ab3",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9358,8 +9185,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "704ca489-333b-4098-9c35-f186d99b8021",
-							"_postman_isSubFolder": true
+							"id": "704ca489-333b-4098-9c35-f186d99b8021"
 						},
 						{
 							"name": "Content sync",
@@ -9378,7 +9204,7 @@
 											}
 										}
 									],
-									"_postman_id": "191cc4cd-942c-4458-8d01-a1e928750d47",
+									"id": "191cc4cd-942c-4458-8d01-a1e928750d47",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9394,10 +9220,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"acl\": [\r\n        {\r\n            \"type\": \"everyone\",\r\n            \"value\": \"c5f19b2d-0a77-454a-9b43-abf298c3b34e\",\r\n            \"accessType\": \"grant\"\r\n        }\r\n    ],\r\n    \"properties\": {\r\n        \"title\": \"Sample item title\",\r\n        \"extension\": \"docx\",\r\n        \"createdBy\": \"John Doe\",\r\n        \"createdDateTime\": \"2021-04-27T11:04:00Z\",\r\n        \"iconUrl\": \"https://contentdepot.blob.core.windows.net/filedepot/sampleIconUrl.png\",\r\n        \"authors\": [\r\n            \"John Doe\"\r\n        ],\r\n        \"authors@odata.type\": \"Collection(String)\",\r\n        \"lastModifiedDate\": \"2021-04-27T11:04:00Z\",\r\n        \"url\": \"https://sampleItemUrl.com\",\r\n        \"containerName\": \"Sample container name\",\r\n        \"containerUrl\": \"https://sampleContainerUrl.com\"\r\n    },\r\n    \"content\": {\r\n        \"type\": \"text\",\r\n        \"value\": \"Empower customers and partners to be more productive by enabling them to bring content and activity information and allow external content to participate in Microsoft Search and OfficeHub experiences so that they find relevant and actionable information across all their applications.\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"acl\": [\r\n        {\r\n            \"type\": \"everyone\",\r\n            \"value\": \"c5f19b2d-0a77-454a-9b43-abf298c3b34e\",\r\n            \"accessType\": \"grant\"\r\n        }\r\n    ],\r\n    \"properties\": {\r\n        \"title\": \"Sample item title\",\r\n        \"extension\": \"docx\",\r\n        \"createdBy\": \"John Doe\",\r\n        \"createdDateTime\": \"2021-04-27T11:04:00Z\",\r\n        \"iconUrl\": \"https://contentdepot.blob.core.windows.net/filedepot/sampleIconUrl.png\",\r\n        \"authors\": [\r\n            \"John Doe\"\r\n        ],\r\n        \"authors@odata.type\": \"Collection(String)\",\r\n        \"lastModifiedDate\": \"2021-04-27T11:04:00Z\",\r\n        \"url\": \"https://sampleItemUrl.com\",\r\n        \"containerName\": \"Sample container name\",\r\n        \"containerUrl\": \"https://sampleContainerUrl.com\"\r\n    },\r\n    \"content\": {\r\n        \"type\": \"text\",\r\n        \"value\": \"Empower customers and partners to be more productive by enabling them to bring content and activity information and allow external content to participate in Microsoft Search and OfficeHub experiences so that they find relevant and actionable information across all their applications.\"\r\n    }\r\n}"
 										},
 										"url": "https://graph.microsoft.com/v1.0/external/connections/sampleConnectionId/items/sampleItemId"
 									},
@@ -9417,7 +9240,7 @@
 											}
 										}
 									],
-									"_postman_id": "6d50384d-7798-46e0-a488-eb9acfe9af0a",
+									"id": "6d50384d-7798-46e0-a488-eb9acfe9af0a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9449,7 +9272,7 @@
 											}
 										}
 									],
-									"_postman_id": "40f7d2ab-473c-4bd6-808a-094ab3340519",
+									"id": "40f7d2ab-473c-4bd6-808a-094ab3340519",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9465,17 +9288,14 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {}
-											}
+											"raw": ""
 										},
 										"url": "https://graph.microsoft.com/v1.0/external/connections/sampleConnectionId/items/sampleItemId"
 									},
 									"response": []
 								}
 							],
-							"_postman_id": "eab701a0-dbfe-4db6-8a22-976ae6f58458",
+							"id": "eab701a0-dbfe-4db6-8a22-976ae6f58458",
 							"event": [
 								{
 									"listen": "prerequest",
@@ -9497,15 +9317,14 @@
 										"id": "b9d8ee9d-ae68-4957-8823-025cdbe0b904"
 									}
 								}
-							],
-							"_postman_isSubFolder": true
+							]
 						},
 						{
 							"name": "Identity Sync",
 							"item": [
 								{
 									"name": "Create group",
-									"_postman_id": "36a51cfe-2818-4a57-87b4-d1489f343013",
+									"id": "36a51cfe-2818-4a57-87b4-d1489f343013",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9528,7 +9347,7 @@
 								},
 								{
 									"name": "Get group",
-									"_postman_id": "9547d848-b71f-485a-a797-cd358f754d11",
+									"id": "9547d848-b71f-485a-a797-cd358f754d11",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9542,7 +9361,7 @@
 								},
 								{
 									"name": "Add AAD user as member",
-									"_postman_id": "328f66a5-e35d-4c5f-9ee9-ff02d41ea17a",
+									"id": "328f66a5-e35d-4c5f-9ee9-ff02d41ea17a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9564,7 +9383,7 @@
 								},
 								{
 									"name": "Add AAD group as member",
-									"_postman_id": "2ca0dd7b-0065-4a5b-90f5-0eee150afe9a",
+									"id": "2ca0dd7b-0065-4a5b-90f5-0eee150afe9a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9586,7 +9405,7 @@
 								},
 								{
 									"name": "Add connector group as member",
-									"_postman_id": "84d7bc2e-0edc-402b-a7c1-9b0ab489cb14",
+									"id": "84d7bc2e-0edc-402b-a7c1-9b0ab489cb14",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9608,7 +9427,7 @@
 								},
 								{
 									"name": "Remove member",
-									"_postman_id": "7f659d59-c636-4b52-98d2-3527e8e69767",
+									"id": "7f659d59-c636-4b52-98d2-3527e8e69767",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9621,7 +9440,7 @@
 								},
 								{
 									"name": "Delete group",
-									"_postman_id": "1ce0706e-289e-4215-9c59-908b0b9ed950",
+									"id": "1ce0706e-289e-4215-9c59-908b0b9ed950",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9633,11 +9452,10 @@
 									"response": []
 								}
 							],
-							"_postman_id": "5c5091ed-8c0d-4eb7-89da-e62fb7932622",
-							"_postman_isSubFolder": true
+							"id": "5c5091ed-8c0d-4eb7-89da-e62fb7932622"
 						}
 					],
-					"_postman_id": "a5bc4963-3cf0-4314-b29a-e36fd99e8940",
+					"id": "a5bc4963-3cf0-4314-b29a-e36fd99e8940",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -9659,8 +9477,7 @@
 								]
 							}
 						}
-					],
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Mail",
@@ -9714,7 +9531,7 @@
 									}
 								}
 							],
-							"_postman_id": "bf57b683-85a5-4950-9889-58c2ca16d899",
+							"id": "bf57b683-85a5-4950-9889-58c2ca16d899",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -9781,7 +9598,7 @@
 									}
 								}
 							],
-							"_postman_id": "972a83a3-0182-4973-bb26-8355f4a66e85",
+							"id": "972a83a3-0182-4973-bb26-8355f4a66e85",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -9798,10 +9615,77 @@
 								"url": "https://graph.microsoft.com/v1.0/users/{{UserId}}/messages/{{MessageId}}"
 							},
 							"response": []
+						},
+						{
+							"name": "Get mailbox settings Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a7e0c7b6-e03f-45c1-a194-37680f02307d",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *MailboxSettings.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "5571fc7c-5409-4817-a455-40f7a7fcb1e6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/mailboxSettings?UserId=mikecdev",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users",
+										"{{UserId}}",
+										"mailboxSettings"
+									],
+									"query": [
+										{
+											"key": "UserId",
+											"value": "mikecdev",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
-					"_postman_id": "0f1c3db0-71bb-487d-b671-81f9a2b258cf",
-					"_postman_isSubFolder": true
+					"id": "0f1c3db0-71bb-487d-b671-81f9a2b258cf"
 				},
 				{
 					"name": "SharePoint",
@@ -9855,7 +9739,7 @@
 									}
 								}
 							],
-							"_postman_id": "b111dc9d-aec8-4390-9f00-223f5bdf8f0f",
+							"id": "b111dc9d-aec8-4390-9f00-223f5bdf8f0f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -9879,8 +9763,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "b403ee0c-1ed3-4923-8f27-9c3a90a9ffe8",
-					"_postman_isSubFolder": true
+					"id": "b403ee0c-1ed3-4923-8f27-9c3a90a9ffe8"
 				},
 				{
 					"name": "Subscriptions",
@@ -9934,7 +9817,7 @@
 									}
 								}
 							],
-							"_postman_id": "bca1010b-70e6-4541-b1dd-f11c61764870",
+							"id": "bca1010b-70e6-4541-b1dd-f11c61764870",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10001,7 +9884,7 @@
 									}
 								}
 							],
-							"_postman_id": "d4d1b478-3b8b-43a3-8056-ee29bee9afae",
+							"id": "d4d1b478-3b8b-43a3-8056-ee29bee9afae",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10017,10 +9900,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \"expirationDateTime\":\"2019-05-19T12:41:53.2962802Z\"\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\r\n   \"expirationDateTime\":\"2019-05-19T12:41:53.2962802Z\"\r\n}"
 								},
 								"url": "https://graph.microsoft.com/v1.0/subscriptions/{{SubscriptionId}}"
 							},
@@ -10075,7 +9955,7 @@
 									}
 								}
 							],
-							"_postman_id": "c908b98f-3efb-4ffe-a26b-2036e6f21b56",
+							"id": "c908b98f-3efb-4ffe-a26b-2036e6f21b56",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10096,8 +9976,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "4fd48b99-a42c-42a0-964c-9afde5fb6590",
-					"_postman_isSubFolder": true
+					"id": "4fd48b99-a42c-42a0-964c-9afde5fb6590"
 				},
 				{
 					"name": "Teams",
@@ -10140,7 +10019,7 @@
 											}
 										}
 									],
-									"_postman_id": "dd306f22-4522-46dc-8a73-7218613180ba",
+									"id": "dd306f22-4522-46dc-8a73-7218613180ba",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -10186,7 +10065,7 @@
 											}
 										}
 									],
-									"_postman_id": "8b4d66d3-ccf9-480e-b903-2f79c592554c",
+									"id": "8b4d66d3-ccf9-480e-b903-2f79c592554c",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -10232,7 +10111,7 @@
 											}
 										}
 									],
-									"_postman_id": "22b79784-2cb5-466b-bc91-a4d2e915a2da",
+									"id": "22b79784-2cb5-466b-bc91-a4d2e915a2da",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -10278,7 +10157,7 @@
 											}
 										}
 									],
-									"_postman_id": "2167d36e-b014-4a31-8476-c0b4a62d6468",
+									"id": "2167d36e-b014-4a31-8476-c0b4a62d6468",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -10333,7 +10212,7 @@
 											}
 										}
 									],
-									"_postman_id": "8c9f2fd8-6b4e-43d1-a432-4f400399571e",
+									"id": "8c9f2fd8-6b4e-43d1-a432-4f400399571e",
 									"protocolProfileBehavior": {
 										"disabledSystemHeaders": {},
 										"disableBodyPruning": true
@@ -10380,7 +10259,7 @@
 											}
 										}
 									],
-									"_postman_id": "56be2c45-0062-4624-9c79-841d0957297d",
+									"id": "56be2c45-0062-4624-9c79-841d0957297d",
 									"protocolProfileBehavior": {
 										"disabledSystemHeaders": {},
 										"disableBodyPruning": true
@@ -10427,7 +10306,7 @@
 											}
 										}
 									],
-									"_postman_id": "029c343f-aa9d-4894-90e9-002dd7f65a79",
+									"id": "029c343f-aa9d-4894-90e9-002dd7f65a79",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -10482,7 +10361,7 @@
 											}
 										}
 									],
-									"_postman_id": "f998e445-c843-4221-ab75-7eadc944eaa4",
+									"id": "f998e445-c843-4221-ab75-7eadc944eaa4",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -10537,7 +10416,7 @@
 											}
 										}
 									],
-									"_postman_id": "c20b0448-6d7a-4100-a59b-14f0495928a6",
+									"id": "c20b0448-6d7a-4100-a59b-14f0495928a6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -10558,8 +10437,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "ab9c70e6-948f-4d1b-9ace-e497092fee0a",
-							"_postman_isSubFolder": true
+							"id": "ab9c70e6-948f-4d1b-9ace-e497092fee0a"
 						},
 						{
 							"name": "Get user's joined teams",
@@ -10596,7 +10474,7 @@
 									}
 								}
 							],
-							"_postman_id": "740acef1-42dc-4774-a0c9-08b294f0a104",
+							"id": "740acef1-42dc-4774-a0c9-08b294f0a104",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10642,7 +10520,7 @@
 									}
 								}
 							],
-							"_postman_id": "3b7b5658-c391-4490-a87c-f5c3de4ae0a8",
+							"id": "3b7b5658-c391-4490-a87c-f5c3de4ae0a8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10688,7 +10566,7 @@
 									}
 								}
 							],
-							"_postman_id": "8da8d646-8d51-41c7-bd06-26f98019f212",
+							"id": "8da8d646-8d51-41c7-bd06-26f98019f212",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10734,7 +10612,7 @@
 									}
 								}
 							],
-							"_postman_id": "f4906be7-683e-4b0e-b1bb-27d957403899",
+							"id": "f4906be7-683e-4b0e-b1bb-27d957403899",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10780,7 +10658,7 @@
 									}
 								}
 							],
-							"_postman_id": "6a845973-7feb-4c7b-a465-a5fc89ddaee5",
+							"id": "6a845973-7feb-4c7b-a465-a5fc89ddaee5",
 							"protocolProfileBehavior": {
 								"disabledSystemHeaders": {},
 								"disableBodyPruning": true
@@ -10827,7 +10705,7 @@
 									}
 								}
 							],
-							"_postman_id": "a0096596-4df8-48f5-84ec-9860c7f4c7fa",
+							"id": "a0096596-4df8-48f5-84ec-9860c7f4c7fa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10882,7 +10760,7 @@
 									}
 								}
 							],
-							"_postman_id": "906d5f3a-cd4a-4786-ae28-3e1177a7673f",
+							"id": "906d5f3a-cd4a-4786-ae28-3e1177a7673f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10937,7 +10815,7 @@
 									}
 								}
 							],
-							"_postman_id": "af3db048-52ba-43fd-ba37-4546e0487619",
+							"id": "af3db048-52ba-43fd-ba37-4546e0487619",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10992,7 +10870,7 @@
 									}
 								}
 							],
-							"_postman_id": "51452499-16e6-4128-89b6-902914c37850",
+							"id": "51452499-16e6-4128-89b6-902914c37850",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -11047,7 +10925,7 @@
 									}
 								}
 							],
-							"_postman_id": "14712c1b-7267-43e0-8585-21f7d5291ea9",
+							"id": "14712c1b-7267-43e0-8585-21f7d5291ea9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -11102,7 +10980,7 @@
 									}
 								}
 							],
-							"_postman_id": "a4ea5262-658f-4118-933a-3515b172c449",
+							"id": "a4ea5262-658f-4118-933a-3515b172c449",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -11114,8 +10992,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "7d94aba1-5af8-424e-897d-a65a50d6fa85",
-					"_postman_isSubFolder": true
+					"id": "7d94aba1-5af8-424e-897d-a65a50d6fa85"
 				},
 				{
 					"name": "Users",
@@ -11165,7 +11042,7 @@
 									}
 								}
 							],
-							"_postman_id": "5d28325f-1b61-4ea3-bebc-2654458864fb",
+							"id": "5d28325f-1b61-4ea3-bebc-2654458864fb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -11221,7 +11098,7 @@
 									}
 								}
 							],
-							"_postman_id": "f578d3e2-ae8a-441f-9cde-f45369d524df",
+							"id": "f578d3e2-ae8a-441f-9cde-f45369d524df",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -11277,7 +11154,7 @@
 									}
 								}
 							],
-							"_postman_id": "0b24a7ee-ab38-409f-b132-e126591a21d9",
+							"id": "0b24a7ee-ab38-409f-b132-e126591a21d9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -11306,11 +11183,10 @@
 							"response": []
 						}
 					],
-					"_postman_id": "e3842845-c9b8-4dc1-921b-7e33a4c9c6b0",
-					"_postman_isSubFolder": true
+					"id": "e3842845-c9b8-4dc1-921b-7e33a4c9c6b0"
 				}
 			],
-			"_postman_id": "87b985a4-283f-4f15-bbe9-576f3a72f66d",
+			"id": "87b985a4-283f-4f15-bbe9-576f3a72f66d",
 			"auth": {
 				"type": "oauth2",
 				"oauth2": {
@@ -11379,7 +11255,7 @@
 							}
 						}
 					],
-					"_postman_id": "bb785ae2-3234-43fe-978d-4a91bd1f6cab",
+					"id": "bb785ae2-3234-43fe-978d-4a91bd1f6cab",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -11410,11 +11286,11 @@
 					"response": []
 				}
 			],
-			"_postman_id": "d9498db4-7133-41e2-8e08-c8b9646f9e63"
+			"id": "d9498db4-7133-41e2-8e08-c8b9646f9e63"
 		},
 		{
 			"name": "v1.0 $metadata",
-			"_postman_id": "dbd143a3-1780-4fda-9cd1-bf96489872cf",
+			"id": "dbd143a3-1780-4fda-9cd1-bf96489872cf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -11432,7 +11308,7 @@
 		},
 		{
 			"name": "beta $metadata",
-			"_postman_id": "efaf9ea6-435b-435f-9a37-b3f9100288fe",
+			"id": "efaf9ea6-435b-435f-9a37-b3f9100288fe",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
