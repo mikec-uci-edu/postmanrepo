@@ -11187,7 +11187,21 @@
 				},
 				{
 					"name": "DIrectory",
-					"item": [],
+					"item": [
+						{
+							"name": "Get directory objects",
+							"id": "7f283c54-9b9d-4747-95f5-e905a2423607",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+							},
+							"response": []
+						}
+					],
 					"id": "ebce3677-d9fc-45da-b737-b090f932e6f8"
 				}
 			],
