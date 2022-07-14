@@ -9660,7 +9660,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/mailboxSettings?UserId=mikecdev",
+									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/mailboxSettings",
 									"protocol": "https",
 									"host": [
 										"graph",
@@ -9677,7 +9677,7 @@
 										{
 											"key": "UserId",
 											"value": "mikecdev",
-											"type": "text"
+											"disabled": true
 										}
 									]
 								}
