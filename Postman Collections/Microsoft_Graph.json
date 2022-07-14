@@ -1082,6 +1082,58 @@
 								"url": "https://graph.microsoft.com/v1.0/groups"
 							},
 							"response": []
+						},
+						{
+							"name": "Get groups Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "353d4a17-9f80-4e77-8a54-26ddb4617bba",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"GroupId\", json[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "7b6c3d36-20a6-49c6-a6ef-c7b5f559f5ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": "https://graph.microsoft.com/v1.0/groups"
+							},
+							"response": []
 						}
 					],
 					"id": "632d854e-5428-4c4a-bfbb-a81fdfacc4d7"
@@ -11203,6 +11255,11 @@
 						}
 					],
 					"id": "ebce3677-d9fc-45da-b737-b090f932e6f8"
+				},
+				{
+					"name": "Groups",
+					"item": [],
+					"id": "fe897be9-c025-42ae-ad5e-988055a223ba"
 				}
 			],
 			"id": "87b985a4-283f-4f15-bbe9-576f3a72f66d",
