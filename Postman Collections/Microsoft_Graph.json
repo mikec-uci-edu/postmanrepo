@@ -11197,7 +11197,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+								"url": "https://graph.microsoft.com/v1.0/directoryObjects/60c03e2c-315f-40b2-b2a9-3d8d5d1da0b2"
 							},
 							"response": []
 						}
